@@ -63,15 +63,19 @@ a {
     line-height: 1.26;
 }
 
-.line-camp {
+.line-clamp {
     display: -webkit-box;
     -webkit-line-clamp: var(--line-clamp, 1);
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-.line-camp.line-2 {
+.line-clamp.line-2 {
     --line-clamp: 2;
+}
+
+.line-clamp.line-3 {
+    --line-clamp: 3;
 }
 
 .break-all {
@@ -475,4 +479,49 @@ header.fixed {
     font-size: 2.6rem;
     line-height: 1.54;
     color: #ffffff;
+}
+
+/* Feature */
+.feature {
+    margin-top: 135px;
+    padding: 65px 0px;
+}
+
+.feature .body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature .body .images {
+    display: flex;
+    gap: 0 30px;
+}
+
+.feature .images img {
+    width: 270px;
+    height: 404px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.feature .images img.lower {
+    margin-top: 34px;
+}
+
+.feature .content {
+    width: 41%;
+}
+
+.feature .content .desc {
+    margin-top: 16px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #5f5b53;
+}
+
+.feature .content .cta-btn {
+    margin-top: 32px;
+    min-width: 137px;
+    background-color: var(--primary-color);
 }
