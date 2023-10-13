@@ -411,8 +411,15 @@ header.fixed {
     background-color: #2e2100;
 }
 
+.feedback .feedback-list {
+    display: flex;
+    overflow: hidden;
+}
+
 .feedback .feedback-item {
     display: flex;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .feedback .info .avatar {
